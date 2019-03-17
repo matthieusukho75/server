@@ -41,7 +41,7 @@ fun Application.cmsApp(
     }
 
     install(Authentication) {
-        form("login") {
+        form("auth") {
             userParamName = "username"
             passwordParamName = "password"
             challenge = FormAuthChallenge.Redirect { "/login" }
